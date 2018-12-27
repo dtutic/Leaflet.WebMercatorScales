@@ -25,7 +25,7 @@ opacity: 0.6 - Opacity of elements drawn over map.
 
 Example (used in demo):
 
-'L.webMercatorScales({ distortionParMask: true,
+`L.webMercatorScales({ distortionParMask: true,
 						 distortionMerMask: true,
 						 distortionThresh: 5, 
 						 bottomScaleBar: true, 
@@ -39,6 +39,6 @@ Example (used in demo):
 						 color: '#000',
 						 colorMer: '#00f',
 						 colorPar: '#f00',
-						 opacity: 0.6 }).addTo(map);'
+						 opacity: 0.6 }).addTo(map);`
              
 Authors: Dražen Tutić (dtutic@geof.hr) and Ana Kuveždić Divjak (akuvezdic@geof.hr), University of Zagreb, Faculty of Geodesy, GEOF-OSGL Lab
