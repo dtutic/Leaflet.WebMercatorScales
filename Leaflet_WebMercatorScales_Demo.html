@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Leaflet Web Mecator Scales Demo</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<!-- Leaflet style. REQUIRED! -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+
+	<style>
+		html { height: 100%; }
+		body { height: 100%; margin: 0; padding: 0;}
+		.map { width: 800px; height: 600px; }
+	</style>
+</head>
+<body>
+	<div id="map" class="map"></div>
+
+    <div>
+    </div>
+
+
+    <script src="./leaflet.webmercatorscales.js"></script>
+
+	<script>
+		var _base_tile_url = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+            map = new L.Map('map',{zoomControl:false}).setView([0, 0], 4);
+        var baselayer = L.tileLayer(_base_tile_url, {
+            unloadInvisibleTiles: false,
+			opacity: 0.3
+        });
+        map.addLayer(baselayer);
+
+        L.webMercatorScales({ distortionParMask: true,
+						 distortionMerMask: true,
+						 distortionThresh: 5, 
+						 bottomScaleBar: true, 
+						 leftScaleBar: false,
+						 rightScaleBar: false, 
+						 topScaleBar: true,
+						 verticalScaleLines: true,
+						 horizontalScaleLines: false,
+						 parScaleIsolines: true,
+						 merScaleIsolines: true,
+						 color: '#000',
+						 colorMer: '#00f',
+						 colorPar: '#f00',
+						 opacity: 0.6 }).addTo(map);
+
+
+	</script>
+
+</body>
+
+</html>
+
