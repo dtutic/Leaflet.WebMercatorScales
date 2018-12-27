@@ -8,20 +8,35 @@ See the demo.
 Options:
 
 distortionParMask: [true | false] - Creates mask that hides areas on map with more than [distortionThresh] in percents of distortions of parallel scale compared to center of map.
+
 distortionMerMask: [true | false] - Creates mask that hides areas on map with more than [distortionThresh] in percents of distortions of meridian scale compared to center of map.
+
 distortionThresh: [integer] - Percent used for distortion mask, 5 (%) was found as distortions generally not noticed by naked eye.
+
 bottomScaleBar: [true | false] - Draw bottom edge scale bar. 
+
 leftScaleBar: [true | false] - Draw left edge scale bar.
+
 rightScaleBar: [true | false] - Draw right edge scale bar.
+
 topScaleBar: [true | false] - Draw top edge scale bar.
+
 verticalScaleLines: [true | false] - Draw vertical variable scale bar lines on map. 
+
 horizontalScaleLines: [true | false] - Draw horizontal variable scale bar lines on map.
+
 parScaleIsolines: [true | false] - Draw lines of constant parallel scale.
+
 merScaleIsolines: [true | false] - Draw lines of constant meridian scale.
+
 color: '#000' - Color for scale bars.
+
 colorMer: '#00f' - Color for meridian scale distortion mask.
+
 colorPar: '#f00' - Color for parallel scale distortion mask.
+
 opacity: 0.6 - Opacity of elements drawn over map.
+
 
 Example (used in demo):
 
