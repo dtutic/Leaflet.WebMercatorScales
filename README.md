@@ -1,7 +1,7 @@
 # Leaflet.WebMercatorScales
 Leaflet plugin that visualizes scales and distortions in Web Mercator projection.
 
-![Leaflet.WebMercatorScales](Leaflet Web Mecator Scales Demo.png)
+![Leaflet.WebMercatorScales](https://github.com/dtutic/Leaflet.WebMercatorScales/blob/master/Leaflet%20Web%20Mecator%20Scales%20Demo.png)
 
 Change of linear scale with latitude in Web Mercator projection can affect determination of distances from the map, especially for large areas. Standard scale bar corresponds to the map center. This plugin gives variable scale bar along map edges (concept used on nautical charts) which can be used to see the effect of linear scale change or for estimation of distances between objects. Simply by panning the map one can bring part of the map closer to the scale bar and estimate distance or size.
 
